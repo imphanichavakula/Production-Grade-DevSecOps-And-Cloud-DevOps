@@ -122,7 +122,7 @@ I personally review your task, your approach, and your GitHub repository based o
 Use hashtags such as:
 ```
 #Batch13 #DevOps #DevSecOps #LearnInPublic
-#Docker #Kubernetes #CI_CD #Cloud
+#Docker #Kubernetes #CI_CD #Cloud #devopsshack
 ```
 
 **Consistency matters more than perfection.**
