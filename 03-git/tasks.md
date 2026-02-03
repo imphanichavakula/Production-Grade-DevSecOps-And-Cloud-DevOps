@@ -11,205 +11,528 @@ You will work with:
 
 ---
 
-## Task 1 – Git Setup & Basic Workflow
+# 🧩 PROJECT CONTEXT
+
+You are working as a DevOps engineer on a team project.
+The repository represents a production-ready application.
+
+---
+
+## Task 1 – Git Installation & Identity Setup
 
 ### Objective
-Understand why Git is used and set it up correctly.
+Prepare your system for Git usage.
 
 ### What You Need to Do
-- Install Git on your system
+- Install Git
 - Configure username and email
-- Initialize a local Git repository
-- Create a remote repository and connect it
-- Perform the basic workflow:
-  - Add files
-  - Commit changes
-  - Push to remote
-  - Pull latest changes
-- Explain the difference between:
-  - Git
-  - GitHub
-  - GitLab
-  - Bitbucket
+- Verify installation
 
 ### Deliverables
-- Git configuration output
+- Git version output
+- Git config output
+
+### Interview Connect
+- Why is Git configuration important?
+
+---
+
+## Task 2 – Understanding Git vs GitHub vs GitLab
+
+### Objective
+Understand the Git ecosystem.
+
+### What You Need to Do
+- Explain differences between Git, GitHub, GitLab, Bitbucket
+- Explain where CI/CD fits in GitLab/GitHub
+
+### Deliverables
+- Short explanation in README or notes file
+
+### Interview Connect
+- Git vs GitHub?
+
+---
+
+## Task 3 – Create Local Repository
+
+### Objective
+Initialize a local Git repository.
+
+### What You Need to Do
+- Create a project directory
+- Initialize Git repository
+- Inspect `.git` folder
+
+### Deliverables
 - Repository initialization proof
+
+### Interview Connect
+- What is stored inside `.git`?
+
+---
+
+## Task 4 – Git Architecture (Blobs, Trees, Commits)
+
+### Objective
+Understand how Git stores data.
+
+### What You Need to Do
+- Make file changes
+- Add and commit
+- Inspect objects using Git plumbing commands
+
+### Deliverables
+- Commit hash proof
+- Object inspection output
+
+### Interview Connect
+- What is a Git commit internally?
+
+---
+
+## Task 5 – Basic Git Workflow
+
+### Objective
+Follow the standard Git workflow.
+
+### What You Need to Do
+- Create files
+- Stage changes
+- Commit changes
+- Modify and recommit
+
+### Deliverables
 - Commit history output
 
 ### Interview Connect
-Be ready to answer:
-- Why is Git preferred over centralized version control?
-- Difference between Git and GitHub?
+- Working directory vs staging vs repository?
 
 ---
 
-## Task 2 – Git Areas, Daily Commands & History
+## Task 6 – Connecting to Remote Repository
 
 ### Objective
-Understand how Git tracks changes internally.
+Work with remote repositories.
 
 ### What You Need to Do
-- Explain and demonstrate:
-  - Working directory
-  - Staging area
-  - Repository
-- Use and explain:
-  - `git status`
-  - `git log`
-  - `git show`
-- Make multiple commits and inspect history
-- Clone a repository and explain the directory structure
+- Create GitHub repo
+- Add remote origin
+- Push commits
+- Pull changes
 
 ### Deliverables
-- Command outputs
-- Commit history screenshots/output
+- Remote configuration output
 
 ### Interview Connect
-Be ready to answer:
-- What happens when you run `git add`?
-- How do you inspect commit history?
+- What happens during git push?
 
 ---
 
-## Task 3 – Branching & Remote Branch Management
+## Task 7 – Branch Creation & Switching
 
 ### Objective
-Work with branches the way teams do in real projects.
+Work with branches.
 
 ### What You Need to Do
-- Create feature branches
-- Switch between branches
-- Push branches to remote
-- List local and remote branches
-- Delete:
-  - Local branches
-  - Remote branches
-- Sync feature branch with main branch
+- Create feature branch
+- Switch branches
+- Verify branch pointers
 
 ### Deliverables
-- Branch listing outputs
+- Branch listing output
+
+### Interview Connect
+- Why branches are lightweight in Git?
+
+---
+
+## Task 8 – Git Diff Usage
+
+### Objective
+Compare changes.
+
+### What You Need to Do
+- Diff working directory vs staging
+- Diff staging vs last commit
+- Diff between branches
+
+### Deliverables
+- Diff outputs
+
+### Interview Connect
+- How do you review changes before commit?
+
+---
+
+## Task 9 – Push Feature Branch to Remote
+
+### Objective
+Collaborate using branches.
+
+### What You Need to Do
+- Push feature branch
+- Set upstream branch
+
+### Deliverables
 - Remote branch proof
 
 ### Interview Connect
-Be ready to answer:
-- Why do teams use feature branches?
-- Difference between local and remote branches?
+- What is upstream tracking?
 
 ---
 
-## Task 4 – Diff, Merge & Rebase
+## Task 10 – Git Merge (Fast-Forward)
 
 ### Objective
-Understand how code changes are compared and combined.
+Merge changes safely.
 
 ### What You Need to Do
-- Use `git diff` to:
-  - Compare files
-  - Compare commits
-  - Compare branches
-- Perform:
-  - Fast-forward merge
-  - Three-way merge
-- Perform a rebase on a feature branch
-- Explain when to use merge vs rebase
+- Merge feature branch using fast-forward
+- Verify commit history
 
 ### Deliverables
-- Diff command outputs
-- Merge and rebase history proof
+- Merge output
 
 ### Interview Connect
-Be ready to answer:
-- Difference between merge and rebase?
-- Why rebase is avoided on shared branches?
+- What is fast-forward merge?
 
 ---
 
-## Task 5 – Stash, Cherry-Pick & Tags
+## Task 11 – Git Merge (Three-Way)
 
 ### Objective
-Handle partial work, hotfixes, and releases.
+Handle divergent branches.
 
 ### What You Need to Do
-- Use `git stash` to save uncommitted work
-- Apply and drop stash entries
-- Manage multiple stashes
-- Cherry-pick a commit from one branch to another
-- Create:
-  - Lightweight tag
-  - Annotated tag
-- Push tags to remote
+- Create divergent commits
+- Perform three-way merge
+
+### Deliverables
+- Merge commit proof
+
+### Interview Connect
+- Why merge commits exist?
+
+---
+
+## Task 12 – Git Rebase
+
+### Objective
+Maintain clean history.
+
+### What You Need to Do
+- Rebase feature branch
+- Resolve rebase conflicts if any
+
+### Deliverables
+- Rebased history proof
+
+### Interview Connect
+- Rebase vs merge?
+
+---
+
+## Task 13 – Git Stash
+
+### Objective
+Handle unfinished work.
+
+### What You Need to Do
+- Stash uncommitted changes
+- List stashes
+- Apply and drop stash
 
 ### Deliverables
 - Stash list output
+
+### Interview Connect
+- When do you use git stash?
+
+---
+
+## Task 14 – Multiple Stashes
+
+### Objective
+Manage multiple work states.
+
+### What You Need to Do
+- Create multiple stashes
+- Apply specific stash
+
+### Deliverables
+- Stash apply proof
+
+### Interview Connect
+- How do you handle context switching?
+
+---
+
+## Task 15 – Git Cherry Pick
+
+### Objective
+Apply specific fixes.
+
+### What You Need to Do
+- Create commit in one branch
+- Cherry-pick into another branch
+
+### Deliverables
 - Cherry-pick commit proof
+
+### Interview Connect
+- Cherry-pick use cases?
+
+---
+
+## Task 16 – Git Tags
+
+### Objective
+Mark releases.
+
+### What You Need to Do
+- Create lightweight tag
+- Create annotated tag
+- Push tags to remote
+
+### Deliverables
 - Tag listing output
 
 ### Interview Connect
-Be ready to answer:
-- When would you use stash?
-- What is cherry-pick used for in production?
+- Tags vs branches?
 
 ---
 
-## Task 6 – Clean History, Conflicts & Undoing Changes
+## Task 17 – Git Squash
 
 ### Objective
-Learn to clean commits and safely undo mistakes.
+Clean commit history.
 
 ### What You Need to Do
-- Squash multiple commits into one
-- Create and resolve merge conflicts:
-  - Same file same line
-  - Same file different line
-- Resolve conflicts manually
-- Use:
-  - `git revert`
-  - `git reset --soft`
-  - `git reset --mixed`
-  - `git reset --hard`
-- Explain when each should be used
+- Squash multiple commits
+- Create single clean commit
+
+### Deliverables
+- Squashed commit proof
+
+### Interview Connect
+- Why squash before PR?
+
+---
+
+## Task 18 – Merge Conflicts (Same Line)
+
+### Objective
+Understand conflict mechanics.
+
+### What You Need to Do
+- Create conflict on same file & same line
+- Resolve conflict manually
+
+### Deliverables
+- Conflict markers + resolution proof
+
+### Interview Connect
+- How conflicts occur?
+
+---
+
+## Task 19 – Merge Conflicts (Different Scenarios)
+
+### Objective
+Handle complex conflicts.
+
+### What You Need to Do
+- File delete vs modify conflict
+- Different line conflict
 
 ### Deliverables
 - Conflict resolution proof
-- Squashed commit history
-- Reset/revert outputs
 
 ### Interview Connect
-Be ready to answer:
-- Difference between revert and reset?
-- How do you handle merge conflicts?
+- Conflict resolution strategy?
 
 ---
 
-## Task 7 – Git Errors & Corporate Branching Strategy
+## Task 20 – Git Revert
 
 ### Objective
-Handle real-world Git problems and follow corporate workflows.
+Safely undo changes.
 
 ### What You Need to Do
-- Simulate and fix:
-  - Detached HEAD state
-  - Non-fast-forward error
-  - Pull failure due to divergence
-- Explain and demonstrate:
-  - Feature branching
-  - Release branching
-  - Hotfix branching
-- Explain:
-  - Branch protection
-  - PR-based merges
-  - Versioned releases
+- Revert a commit
+- Verify new revert commit
 
 ### Deliverables
-- Error simulation and fix outputs
-- Branching strategy explanation
+- Revert commit proof
 
 ### Interview Connect
-Be ready to answer:
-- How do teams manage releases using Git?
-- How do you recover from Git mistakes safely?
+- Why revert is safe in production?
 
+---
+
+## Task 21 – Git Reset (Soft)
+
+### Objective
+Move HEAD safely.
+
+### What You Need to Do
+- Perform soft reset
+- Inspect staging state
+
+### Deliverables
+- Reset proof
+
+### Interview Connect
+- Soft vs mixed reset?
+
+---
+
+## Task 22 – Git Reset (Mixed & Hard)
+
+### Objective
+Understand destructive operations.
+
+### What You Need to Do
+- Perform mixed reset
+- Perform hard reset
+- Recover lost commit using reflog
+
+### Deliverables
+- Reset & recovery proof
+
+### Interview Connect
+- Why hard reset is dangerous?
+
+---
+
+## Task 23 – Git Errors & Recovery
+
+### Objective
+Handle real Git errors.
+
+### What You Need to Do
+Fix:
+- Detached HEAD
+- Non-fast-forward error
+- Pull failure due to divergence
+
+### Deliverables
+- Error + fix outputs
+
+### Interview Connect
+- How do you recover from Git mistakes?
+
+---
+
+## Task 24 – Corporate Branching Strategy
+
+### Objective
+Follow enterprise workflows.
+
+### What You Need to Do
+- Create:
+  - main branch
+  - feature branch
+  - release branch
+  - hotfix branch
+- Explain branch lifecycle
+
+### Deliverables
+- Branch structure proof
+
+### Interview Connect
+- How releases are managed in corporates?
+
+---
+
+## Task 25 – Git Ignore
+
+### Objective
+Ignore unwanted files.
+
+### What You Need to Do
+- Create `.gitignore`
+- Ignore logs, build files, secrets
+- Verify ignored files
+
+### Deliverables
+- git status proof
+
+### Interview Connect
+- Why `.gitignore` is important?
+
+---
+
+## Task 26 – Pull Request Workflow
+
+### Objective
+Collaborate using PRs.
+
+### What You Need to Do
+- Create PR from feature branch
+- Review changes
+- Merge PR
+
+### Deliverables
+- PR screenshot/proof
+
+### Interview Connect
+- Why PRs are mandatory?
+
+---
+
+## Task 27 – GitHub Organization & RBAC
+
+### Objective
+Understand access control.
+
+### What You Need to Do
+- Explain GitHub roles
+- Explain repo permissions
+- Explain RBAC use cases
+
+### Deliverables
+- Permission explanation
+
+### Interview Connect
+- How access is managed in teams?
+
+---
+
+## Task 28 – Git Flow Strategy
+
+### Objective
+Implement Git Flow.
+
+### What You Need to Do
+- Create branches as per Git Flow
+- Explain flow from dev to release
+
+### Deliverables
+- Branch flow diagram or explanation
+
+### Interview Connect
+- Git Flow vs Trunk-based development?
+
+---
+
+## Task 29 – Documentation & Notes
+
+### Objective
+Document Git usage.
+
+### What You Need to Do
+- Add notes explaining:
+  - Common Git commands
+  - Error recovery steps
+  - Branching strategy
+
+### Deliverables
+- Notes file
+
+### Interview Connect
+- How documentation helps DevOps teams?
 ---
 
 ## 🌍 Learn in Public (Mandatory)
