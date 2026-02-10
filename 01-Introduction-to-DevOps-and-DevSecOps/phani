@@ -1,3 +1,5 @@
+Task 1 – DevOps, DevSecOps & Why They Exist
+
 Traditional SDLC: Gone through multiple phases
 Requirement gathering -> Design -> implementation -> testing -> deployment -> Maintainence
 Limitations:
@@ -19,5 +21,9 @@ Security is nolonger an after thought at the end
 
 Shift-Left Security: Move security towards the earlier phase of development.
 Benifit: Faster fixes, lower costs and secured application protection.
+
+---------------------------------------------------------------------------------------------------
+
+
 
 
