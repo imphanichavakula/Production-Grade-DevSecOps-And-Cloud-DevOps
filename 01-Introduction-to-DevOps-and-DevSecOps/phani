@@ -24,6 +24,65 @@ Benifit: Faster fixes, lower costs and secured application protection.
 
 ---------------------------------------------------------------------------------------------------
 
+Task 2 – How DevOps Works in Real Companies
+
+1. High-Level DevOps Workflow
+- Code Commit:
+- Developers write code and push it to a shared repository (e.g., GitHub, GitLab, Bitbucket).
+- Version control ensures collaboration and history tracking.
+- Build : The code is compiled and packaged automatically using build tools (e.g., Maven, Gradle, Jenkins).
+- Continuous Integration (CI) pipelines trigger builds on every commit.
+- Testing: Automated tests (unit, integration, regression) run to validate functionality.
+- Tools: JUnit, Selenium, pytest.
+- Security Scanning :  Code and dependencies are scanned for vulnerabilities.
+- Tools: SonarQube, Snyk, OWASP Dependency-Check.
+- Artifact Creation : Once validated, the build produces deployable artifacts (e.g., Docker images, JAR/WAR files).
+- Stored in artifact repositories like Nexus or Artifactory.
+- Deployment : Artifacts are deployed to staging or production environments.
+- Tools: Kubernetes, Helm, Ansible, Terraform.
+- Monitoring : Applications and infrastructure are continuously monitored for performance, errors, and security.
+- Tools: Prometheus, Grafana, ELK Stack, Datadog.
+
+2. DevOps Team Roles
+- > DevOps Engineer
+- Designs CI/CD pipelines.
+- Automates deployments and infrastructure.
+- Bridges dev and ops teams.
+-----------------------------------------------
+- > Security Engineer
+- Integrates security tools into pipelines.
+- Ensures compliance and vulnerability management.
+- Promotes “shift-left” security practices.
+-------------------------------------------------
+
+- > Site Reliability Engineer (SRE)
+- Focuses on system reliability, uptime, and scalability.
+- Implements monitoring, alerting, and incident response.
+- Balances innovation with stability.
+---------------------------------------------------------
+
+3. Day-to-Day DevOps Activities
+- Managing CI/CD pipelines.
+- Automating infrastructure with IaC (Infrastructure as Code).
+- Running automated tests and scans.
+- Deploying updates frequently.
+- Monitoring systems and responding to incidents.
+- Collaborating across dev, ops, and security teams.
+
+4. Why Deployment Strategies Matter
+- Deployment strategies reduce downtime and risk.
+- They allow testing new versions in production safely.
+- They ensure smooth user experience during updates.
+
+5. Example Deployment Strategy: Blue-Green Deployment
+- Concept: Two environments — Blue (current live) and Green (new version).
+- Process:
+- Deploy new version to Green.
+- Test Green environment thoroughly.
+- Switch traffic from Blue to Green once stable.
+- Benefit: Zero downtime, easy rollback if issues occur.
+
+
 
 
 
