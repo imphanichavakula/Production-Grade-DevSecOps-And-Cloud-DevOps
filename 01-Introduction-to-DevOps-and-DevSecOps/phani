@@ -1,1 +1,23 @@
+Traditional SDLC: Gone through multiple phases
+Requirement gathering -> Design -> implementation -> testing -> deployment -> Maintainence
+Limitations:
+1) Slow delivery
+2) lack of flexibility
+3) late testing
+4) Misscommunication or Communication gaps and delays
+
+DEVOPS = Development + Operations
+Advantages:
+1) Faster delivery or release cycles
+2) Automations of builds,testing and deployment
+3) Breakes the gap between dev and ops team
+
+DevSecOps = Development + Security + Operations
+integrate security into the devops practice.(At every stage of the pipeline)
+Finding risks as eraly as possible (Vulnerabilities are caught early, reducing risks and costs.)
+Security is nolonger an after thought at the end
+
+Shift-Left Security: Move security towards the earlier phase of development.
+Benifit: Faster fixes, lower costs and secured application protection.
+
 
